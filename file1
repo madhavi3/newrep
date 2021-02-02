@@ -1,0 +1,20 @@
+{
+  "Description": "Single Instance",
+  "Resources": {
+    "Web1": {
+      "Type": "AWS :: EC2 :: Instance",
+      "Properties": {
+        "IamageId": "ami-08111162",
+        "InstanceType": "t2.micro",
+        "SecurityGroups": "mysg",
+        "KeyName": "virginia",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "Web1"
+          }
+        ]
+      }
+    }
+  }
+}
